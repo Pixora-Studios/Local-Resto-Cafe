@@ -5,15 +5,12 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 
 interface AnimatedCounterProps {
   value: number;
-  duration?: number;
   suffix?: string;
   className?: string;
 }
 
 export default function AnimatedCounter({
   value,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  duration = 2000,
   suffix = "",
   className = "",
 }: AnimatedCounterProps) {
